@@ -84,8 +84,13 @@ function mostraPergunta() {
 function mostraAlternativas() {
     for(const alternativa of perguntaAtual.alternativas){
         const botaoAlernativas = document.createElement("botton");
-        botaoAlernativas.textContent = alternativa;
+        botaoAlernativas.textContent = alternativa.texto;
+        botaoAlernativas.addEventListener("click",()=> respostaSelecionada(alternativa));
         caixaAlternativas.appendChild(botaoAlernativas);
     }
+}
+function respostaSelecionada(opcaoSelecionada){
+    atial++
+    mostraPergunta();
 }
 mostraPergunta();
