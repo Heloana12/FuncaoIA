@@ -90,7 +90,7 @@ function mostraAlternativas() {
     }
 }
 function respostaSelecionada(opcaoSelecionada){
-    atial++
+    atual++
     mostraPergunta();
 }
 mostraPergunta();
